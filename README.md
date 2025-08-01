@@ -16,7 +16,7 @@ This is a responsive **Twitter clone frontend UI** built using **Tailwind CSS**.
 ## 🛠 Tech Stack
 
 - ✅ HTML5
-- ✅ Tailwind CSS
+- ✅ TailwindCSS
 - ✅ Material Symbols (Google Fonts Icons)
 
 ## 🖼️ Screenshots
