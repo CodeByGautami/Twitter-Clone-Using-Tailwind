@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Twitter Clone</title>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="./dist/output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-black">
+
+
+
+  <div class="container flex w-full mx-auto bg-black text-white ">
+
+
+
+
+    <div class="first container  w-[25%] pt-4 ">
+
+      <div class="logo invert ">
+        <svg viewBox="0 0 24 24" aria-hidden="true"
+          class="w-8 m-auto ml-32 mr-4 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+          <g>
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+            </path>
+          </g>
+        </svg>
+      </div>
+
+      <div class="sidebar flex justify-end">
+
+        <ul class="flex flex-col w-10 mr-5">
+          <li class="flex justify-end items-start hover:rounded-full hover:cursor-pointer hover:bg-gray-600  py-2.5">
+            <span class="material-symbols-outlined text-3xl ">home</span>
+          </li>
+          <li class="flex justify-end items-start hover:rounded-full hover:cursor-pointer hover:bg-gray-600 py-2.5">
+            <span class="material-symbols-outlined text-3xl">search</span>
+          </li>
+          <li class="flex justify-end items-start hover:rounded-full hover:cursor-pointer hover:bg-gray-600 py-2.5">
+            <span class="material-symbols-outlined text-3xl">notifications</span>
+          </li>
+          <li class="flex justify-end items-start hover:rounded-full hover:cursor-pointer hover:bg-gray-600 py-2.5">
+            <span class="material-symbols-outlined text-3xl">Mail</span>
+          </li>
+          <li class="flex justify-end items-start hover:rounded-full hover:cursor-pointer hover:bg-gray-600 py-2.5">
+             <span class="material-symbols-outlined text-3xl"> directory_sync
+          </span>
+          </li>
+          <li class="flex justify-end items-start hover:rounded-full hover:cursor-pointer hover:bg-gray-600 py-2.5">
+            <span class="material-symbols-outlined text-3xl">Person</span>
+          </li>
+          <li class="flex justify-end items-start hover:rounded-full hover:cursor-pointer hover:bg-gray-600 py-2.5">
+            <span class="material-symbols-outlined text-3xl">Pending</span>
+          </li>
+          <li class="flex justify-end items-start hover:rounded-full hover:cursor-pointer hover:bg-gray-600 py-2.5">
+            <span class="material-symbols-outlined text-3xl">Post</span>
+          </li>
+          <li class="flex justify-end items-start hover:rounded-full hover:cursor-pointer hover:bg-gray-600 py-2.5">
+            <span class="material-symbols-outlined text-3xl">account_circle</span>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="second border border-x-gray-500 border-y-black w-[90%]">
+
+
+      <div class="nav flex font-bold border border-gray-600 text-gray-500  ">
+        <div class="box1 w-1/2 px-28 py-4 hover:bg-gray-900 ">For You</div>
+        <div class="box2 w-1/2 px-24 py-4 hover:bg-gray-900">Following</div>
+      </div>
+      <div>
+
+
+        <div class="title flex p-3">
+          <span class="material-symbols-outlined text-4xl px-2">account_circle</span>
+          <div class="what">
+            <!-- <h3 class="mt-1 text-xl text-gray-500 ">What's Happening ?</h3> -->
+            <input class="mt-1 text-xl text-gray-500 fill-transparent bg-transparent focus:outline-none " type="text"
+              placeholder="What's Happening ?">
+          </div>
+        </div>
+
+        <div class="flex ml-16 font-bold text-blue-400 text-sm ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="blue" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+          </svg>
+
+          <a href="#" class="ml-1">Everyone can reply</a>
+
+
+        </div>
+        <div>
+          <hr class="border border-[0.2 px] border-gray-700 w-[85%] my-3  ml-14" />
+        </div>
+
+        <div class="flex gap-4 ml-16">
+
+          <span class="material-symbols-outlined text-xl text-blue-400 hover:cursor-pointer">
+            imagesmode
+          </span>
+          <span class="material-symbols-outlined text-xl text-blue-400 hover:cursor-pointer"> gif_box
+          </span>
+          <span class="material-symbols-outlined text-xl text-blue-400 hover:cursor-pointer"> directory_sync
+          </span>
+          <span class="material-symbols-outlined text-xl text-blue-400 hover:cursor-pointer"> event_list
+          </span>
+          <span class="material-symbols-outlined text-xl text-blue-400 hover:cursor-pointer"> sentiment_satisfied
+          </span>
+          <span class="material-symbols-outlined text-xl text-blue-400 hover:cursor-pointer"> credit_card_clock
+          </span>
+          <span class="material-symbols-outlined text-xl text-blue-400 hover:cursor-pointer"> location_on
+          </span>
+
+          <button class="ml-48  bg-gray-500 rounded-full w-16 py-1">Post</button>
+
+
+
+        </div>
+
+      </div>
+
+
+
+      <hr class="border-t border-gray-600 my-3" />
+
+      <div class="text-center">
+        <button class="text-blue-400 ">Show 1,645 Posts</button>
+      </div>
+
+      <hr class="border-t border-gray-600 my-3" />
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="third w-[70%] bg-black ">
+
+
+
+      <div class="search m-2 px-5 ">
+        <input type="text" class=" bg-black border border-gray-500 w-[80%] mx-auto text-white rounded-full py-3 px-5"
+          placeholder="Search">
+      </div>
+
+
+
+
+      <div class="box1 border border-gray-500 m-6 w-[70%] mx-8 rounded-lg text-white px-2 py-1">
+        <div class="subscribe">
+          <h1 class="text-xl font-bold m-2">Subscribe to Premium </h1>
+          <p class="m-2">Subscribe to unlock new features and if eligible, receive a share of revenue </p>
+        </div>
+        <button class="bg-blue-500 rounded-full w-24 h-10 m-1 px-2 font-bold">Subscribe</button>
+      </div>
+
+
+      <div class="box1 border border-gray-500 m-6 w-[70%] mx-8 rounded-lg text-white px-4 py-1">
+        <h1 class="text-xl font-bold m-3">What's Happening </h1>
+
+        <div class="one h-18 py-1 ">
+          <p class="font-light text-sm text-gray-400">Sports . Trending <button
+              class="ml-44 font-bold text-xl  ">...</button></p>
+          <h3 class=" font-bold">Akshadeep</h3>
+          <p class="font-light text-sm text-gray-400">1644 posts</p>
+        </div>
+
+        <div class="one  h-18 py-1">
+          <p class="font-light text-sm text-gray-400">Entertainment . Trending <button
+              class="ml-32 font-bold text-xl  ">...</button></p>
+          <h3 class=" font-bold">#CoolieTrailer</h3>
+          <p class="font-light text-sm text-gray-400">3044 posts</p>
+        </div>
+
+        <div class="one h-18 py-1">
+          <p class="font-light text-sm text-gray-400">Trending in India <button
+              class="ml-44 font-bold text-xl  ">...</button></p>
+          <h3 class=" font-bold">#Dhanshree Varma</h3>
+          <p class="font-light text-sm text-gray-400">744 posts</p>
+        </div>
+
+        <div class="one  h-18 py-1">
+          <p class="font-light text-sm text-gray-400">Politics . Trending <button
+              class="ml-44 font-bold text-xl  ">...</button></p>
+          <h3 class=" font-bold">PM_Modi</h3>
+          <p class="font-light text-sm text-gray-400">6744 posts</p>
+        </div>
+
+
+        <button class="py-2  text-blue-400">Show More</button>
+      </div>
+
+
+
+
+      <div class="box1 border border-gray-500 m-6 w-[70%] mx-8 rounded-lg text-white px-2  ">
+        <h1 class="text-xl font-bold m-3">Who to Follow </h1>
+
+        <div class="one h-18  py-2">
+          <div class="part1 flex">
+            <span class="material-symbols-outlined text-4xl px-2">account_circle</span>
+           <div> <div class="text flex  text-white font-bold">Amitabh Bachchan <span class="material-symbols-outlined text-blue-600 fill-blue-500"  >
+                verified
+              </span>
+            </div>
+            <p class=" mt-0 text-gray-500">@SrBachchan</p>
+          </div>
+
+          <button class="ml-4 h-9  bg-white text-black rounded-full w-20 ">Follow</button>
+              
+          </div>
+
+           <div class="one h-18 py-2 ">
+          <div class="part1 flex">
+            <span class="material-symbols-outlined text-4xl px-2">account_circle</span>
+           <div> <div class="text flex  text-white font-bold">Cristano Ronaldo <span class="material-symbols-outlined text-blue-600 fill-blue-500"  >
+                verified
+              </span>
+            </div>
+            <p class=" mt-0 text-gray-500">@Cristano</p>
+          </div>
+
+          <button class="ml-7 h-9  bg-white text-black rounded-full w-20 ">Follow</button>
+              
+          </div>
+
+
+           <div class="one h-18 py-2 ">
+          <div class="part1 flex">
+            <span class="material-symbols-outlined text-4xl px-2">account_circle</span>
+           <div> <div class="text flex  text-white font-bold">Surya Yadhav <span class="material-symbols-outlined text-blue-600 fill-blue-500"  >
+                verified
+              </span>
+            </div>
+            <p class=" mt-0 text-gray-500">@Surya_14kumar</p>
+          </div>
+
+          <button class="ml-14 h-9  bg-white text-black rounded-full w-20 ">Follow</button>
+              
+          </div>
+
+
+      
+
+
+        </div>
+
+
+
+
+        <button class="py-2 ml-3 text-blue-400">Show More</button>
+
+      </div>
+
+
+    </div>
+
+
+
+
+  </div>
+
+</body>
+
+</html>
