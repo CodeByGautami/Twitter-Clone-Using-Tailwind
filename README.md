@@ -2,6 +2,10 @@
 
 This is a responsive **Twitter clone frontend UI** built using **Tailwind CSS**. It mimics the layout and design of the official Twitter web app — including sidebar icons, tweet composer, search bar, trending topics, and suggested users.
 
+## 🌐 Live Demo
+
+🔗 [Click here to view the live site](https://twitter-clone-using-tailwind-vblg.vercel.app/)
+
 ## ✨ Features
 
 - Clean layout with **3-column structure**:
@@ -52,11 +56,10 @@ Run :
 npm run dev
 ```
 
-
-
 ## 🖼️ Screenshots
 
 <img width="1918" height="834" alt="image" src="https://github.com/user-attachments/assets/40ad1f0d-dbde-4294-a8ae-b26ba49e12c0" />
+
 
 
 
