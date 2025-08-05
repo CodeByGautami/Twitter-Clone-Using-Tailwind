@@ -19,11 +19,6 @@ This is a responsive **Twitter clone frontend UI** built using **Tailwind CSS**.
 - ✅ TailwindCSS
 - ✅ Material Symbols (Google Fonts Icons)
 
-## 🖼️ Screenshots
-
-<img width="1811" height="888" alt="image" src="https://github.com/user-attachments/assets/a7d6a34c-162a-4e2b-b4f3-12ade787e838" />
-
-
 
 ## ## 🚀 Setup & How to Run
 
@@ -56,6 +51,14 @@ Run :
 ```
 npm run dev
 ```
+
+
+
+## 🖼️ Screenshots
+
+<img width="1918" height="834" alt="image" src="https://github.com/user-attachments/assets/40ad1f0d-dbde-4294-a8ae-b26ba49e12c0" />
+
+
 
 
 
